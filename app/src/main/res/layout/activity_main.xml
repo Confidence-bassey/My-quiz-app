@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quiz_background_design"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/total_questions"
+        android:text="Total questions"
+        android:padding="16dp"
+        android:textColor="@color/Neon_Pink"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/questions"
+        android:text="question"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/options"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:id="@+id/options">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/option_A"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:text="option A"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/option_B"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:text="option B"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/option_C"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:text="option C"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/option_D"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:text="option D"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/subit_btn"
+        android:text="Submit"
+        android:layout_below="@+id/options"
+        android:padding="16dp"
+        android:background="@color/Magenta"
+        android:elevation="4dp"
+        android:elegantTextHeight="true"
+        android:backgroundTint="@color/Rose"
+        android:layout_margin="20dp"/>
+
+
+</RelativeLayout>
